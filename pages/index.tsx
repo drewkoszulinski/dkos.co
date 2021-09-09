@@ -56,7 +56,7 @@ const Home: NextPage = () => {
             key={item.title}
             title={item.title}
             description={item.description}
-            navigateTo={item.navigateTo}
+            // navigateTo={item.navigateTo}
             image={item.img}>
           </PortfolioItem>
         ))}

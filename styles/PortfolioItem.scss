@@ -1,0 +1,42 @@
+.portfolio-item {
+    @apply flex;
+    @apply flex-row;
+    @apply w-full;
+    @apply max-w-6xl;
+    @apply mx-auto;
+    @apply my-40;
+    @apply rounded-3xl;
+    @apply bg-gray-800;
+    @apply shadow-3xl;
+    @apply overflow-hidden;
+
+    @apply md:flex-col;
+
+    .portfolio-inner-left {
+        @apply max-w-md;
+        @apply p-8;
+
+        @apply md:max-w-full;
+
+        .description {
+            @apply pt-4;
+        }
+        
+        .portfolio-btn {
+            @apply mt-8;
+            @apply py-2;
+            @apply rounded-full;
+        }
+    }
+
+    .portfolio-inner-right {
+        @apply bg-gray-700;
+        @apply h-full;
+        @apply flex-grow;
+        @apply p-12;
+        height: 32rem;
+
+        @apply md:h-auto;
+    }
+
+}

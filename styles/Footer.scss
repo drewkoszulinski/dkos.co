@@ -1,0 +1,43 @@
+.footer {
+    @apply flex;
+    @apply flex-col;
+    @apply py-14;
+    @apply px-3;
+    
+    p.copyright {
+        @apply text-center;
+        @apply w-full;
+        @apply mt-12;
+        @apply font-light;
+        @apply tracking-wider;
+        @apply text-gray-400;
+        @apply text-sm;
+    }
+
+    h6.heading {
+        @apply font-normal;
+        @apply tracking-widest;
+        @apply uppercase;
+        @apply text-sm;
+        @apply text-center;
+        @apply mb-4;
+    }
+
+    .tech-stack {
+        @apply flex;
+        @apply flex-row;
+        @apply w-full;
+        @apply items-center;
+        @apply justify-center;
+        
+        @apply md:flex-col;
+        
+        
+        svg {
+            @apply justify-between;
+            @apply opacity-80;
+            @apply transform;
+            @apply scale-75;
+        }
+    }
+}

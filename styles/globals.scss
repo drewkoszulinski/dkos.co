@@ -1,0 +1,62 @@
+html,
+body {
+    @apply bg-gray-900;
+    @apply font-sans;
+    @apply text-white;
+
+    .heading {
+        @apply font-bold;
+        @apply text-gray-300;
+    }
+
+    h1.heading {
+        @apply text-4xl;
+        @apply mb-4;
+    }
+
+    h2.heading {
+        @apply text-3xl;
+        @apply mb-3;
+    }
+
+    h3.heading {
+        @apply text-2xl;
+    }
+
+    .site-container {
+        @apply w-full;
+        @apply max-w-7xl;
+        @apply px-3;
+        @apply mx-auto;
+    }
+
+    .button {
+        @apply rounded-lg;
+        @apply transition;
+        @apply duration-150;
+        @apply cursor-pointer;
+        @apply px-4;
+        @apply py-3;
+
+        &.primary {
+            @apply bg-red-800;
+            @apply text-gray-200;
+
+            &:hover {
+                @apply bg-red-700;
+                @apply text-white;
+            }
+        }
+
+        &.secondary {
+            @apply bg-gray-700;
+            @apply text-gray-200;
+            @apply rounded-full;
+
+            &:hover {
+                @apply bg-gray-600;
+                @apply text-white;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.hero {
+    @apply bg-red-800;
+    @apply w-full;
+    @apply h-screen;
+    @apply flex;
+    max-height: 60rem;
+
+    .waves-container {
+        @apply absolute;
+        @apply w-full;
+        @apply h-screen;
+        @apply overflow-hidden;
+        max-height: 60rem;
+
+        .wave {
+            @apply absolute;
+
+            &.wave-1 {
+                @apply -bottom-52;
+                @apply left-0;
+                @apply w-full;
+                @apply opacity-0;
+                animation: wave-1 1s cubic-bezier(.5, 0, 0, 1) .6s forwards;
+            }
+
+            &.wave-2 {
+                @apply -bottom-52;
+                @apply left-0;
+                @apply w-full;
+                @apply opacity-0;
+                animation: wave-1 2s cubic-bezier(.5, 0, 0, 1) .6s forwards;
+            }
+
+            &.wave-3 {
+                @apply -bottom-52;
+                @apply left-0;
+                @apply w-full;
+                @apply opacity-0;
+                animation: wave-1 3s cubic-bezier(.5, 0, 0, 1) .6s forwards;
+            }
+
+            &.wave-4 {
+                @apply -bottom-52;
+                @apply left-0;
+                @apply w-full;
+                @apply opacity-0;
+                animation: wave-1 4s cubic-bezier(.5, 0, 0, 1) .6s forwards;
+            }
+
+            &.wave-bottom {
+                @apply absolute;
+                @apply -bottom-1;
+                @apply -left-20;
+                @apply left-0;
+                @apply text-gray-900;
+                width: 100%;
+            }
+        }
+    }
+
+    .hero-inner {
+        @apply w-full;
+        @apply max-w-3xl;
+        @apply mx-auto;
+        @apply my-auto;
+        @apply z-40;
+        
+        .hero-heading {
+            @apply text-white;
+            @apply text-2xl;
+            @apply text-center;
+            @apply mt-0;
+            @apply mb-16;
+            @apply mx-8;
+        }
+    }
+}
+
+@keyframes wave-1 {
+    0% {
+        @apply -bottom-96;
+        @apply opacity-0;
+    }
+    100% {
+        @apply -bottom-52;
+        @apply opacity-100;
+    }
+}

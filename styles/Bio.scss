@@ -1,0 +1,38 @@
+.bio-outer {
+    @apply w-full;
+    @apply bg-gray-800;
+    @apply mt-96;
+    @apply px-3;
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+
+    .pf-pic {
+        @apply w-56;
+        @apply h-56 ;
+        @apply -mt-28;
+        @apply mb-20;
+        @apply rounded-full;
+        @apply border-4;
+        @apply border-gray-700;
+        @apply shadow-xl;
+    }
+
+    .bio-body {
+        @apply my-10;
+        @apply mx-4;
+        @apply w-full;
+        @apply max-w-2xl;
+        @apply text-center;
+    }
+
+    .button.primary {
+        @apply w-full;
+        @apply max-w-xs;
+        @apply mb-32;
+    }
+
+    .copyright {
+        @apply my-24;
+    }
+}

@@ -6,20 +6,20 @@ const PortfolioItem = (props) => {
     };
 
     return (
-        <div class="portfolio-item">
-            <div class="portfolio-inner-left">
-                <h3 class="heading">
+        <div className="portfolio-item">
+            <div className="portfolio-inner-left">
+                <h3 className="heading">
                     {props.title}
                 </h3>
-                <p class="description">{props.description}</p>
+                <p className="description">{props.description}</p>
                 {props.navigateTo &&
                 <Link href={props.navigateTo}>
-                    <button class="button secondary portfolio-btn" onClick={handleClickReadMore}>Read More</button>
+                    <button className="button secondary portfolio-btn" onClick={handleClickReadMore}>Read More</button>
                 </Link>
                 }
             </div>
-            <div class="portfolio-inner-right">
-                <img class="image" src={props.image}></img>
+            <div className="portfolio-inner-right">
+                <img className="image" src={props.image}></img>
             </div>
 
         </div>

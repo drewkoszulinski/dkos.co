@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div class="hero">
+        <div className="hero">
             <div className="waves-container">
                 <svg className="wave wave-1" width="1808" height="1043" viewBox="0 0 1808 1043" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M364.5 93C947 131.628 766.95 609.854 1434.5 869.5C2029.95 1101.1 2264.5 1036 2264.5 1036C2264.5 1036 208.795 1270.73 -179.407 1001.07C-436.614 822.409 -106 61.7988 364.5 93Z" fill="white" fill-opacity="0.02"/>
@@ -18,8 +18,8 @@ const Hero = () => {
                     <path d="M0 64.7682C0 64.7682 140 170.68 569 170.68C998 170.68 1141 0.00012207 1528.5 0C1691 -5.11906e-05 1808 102.663 1808 102.663V242H0L0 64.7682Z" fill="currentColor"/>
                 </svg>
             </div>
-            <div class="hero-inner">
-                <h1 class="hero-heading">Ahoy! I'm a Colorado-based, UX Designer & developer. I design & build exceptionally airtight user experiences.</h1>
+            <div className="hero-inner">
+                <h1 className="hero-heading">Ahoy! I'm a Colorado-based, UX Designer & developer. I design & build exceptionally airtight user experiences.</h1>
             </div>
         </div>
     )

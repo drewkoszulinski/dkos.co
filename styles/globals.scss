@@ -30,6 +30,12 @@ body {
         @apply mx-auto;
     }
 
+    #modal-root {
+        @apply fixed;
+        @apply top-0;
+        @apply z-50;
+    }
+
     .button {
         @apply rounded-lg;
         @apply transition;

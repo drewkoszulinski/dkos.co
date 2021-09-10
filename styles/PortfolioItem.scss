@@ -33,10 +33,24 @@
         @apply bg-gray-700;
         @apply h-full;
         @apply flex-grow;
-        @apply p-12;
+        @apply p-8;
+        @apply overflow-visible;
         height: 32rem;
 
         @apply md:h-auto;
+        @apply md:p-3;
+
+        .portfolio-image {
+            @apply cursor-pointer;
+            @apply duration-150;
+            @apply transition;
+            @apply ease-out;
+
+            &:hover {
+                @apply transform;
+                @apply scale-105;
+            }
+        }
     }
 
 }

@@ -1,0 +1,37 @@
+.modal-overlay {
+    @apply absolute;
+    @apply w-screen;
+    @apply h-screen;
+    @apply bg-gray-900;
+    @apply bg-opacity-90;
+    @apply p-4;
+    animation: modal-open .4s cubic-bezier(.5, 0, 0, 1) forwards;
+
+    .modal-close-btn {
+        @apply block;
+        @apply ml-auto;
+        @apply mr-4;
+        @apply w-12;
+        @apply h-12;
+        @apply animate-bounce;
+        animation-iteration-count: .5;
+        animation-timing-function: ease-out;
+
+    }
+
+    .modal-content {
+        @apply max-w-7xl;
+        @apply mx-auto;
+    }
+}
+
+@keyframes modal-open {
+    0% {
+        @apply top-32;
+        @apply opacity-0;
+    }
+    100% {
+        @apply top-0;
+        @apply opacity-100;
+    }
+}

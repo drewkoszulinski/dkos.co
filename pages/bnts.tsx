@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
+import Subpage from '../components/Subpage'
 
 const Bnts: NextPage = () => {
     return (
-        <div>bnts page works</div>
+        <div>
+            <Subpage></Subpage>
+        </div>
     )
 }
 

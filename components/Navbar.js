@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Navbar = () => {
     return (
         <div className="navbar">
@@ -9,8 +11,12 @@ const Navbar = () => {
                     <span className="logo-s">s</span>
                 </div>
                 <div className="nav-buttons">
-                    <button className="button secondary mr-5 bg-black">cv</button>
-                    <button className="button primary">contact</button>
+                    <Link href="/cv.pdf">
+                        <button className="button secondary mr-5 bg-black">cv</button>
+                    </Link>
+                    <Link href="https://drew61.typeform.com/to/dysVVM?typeform-source=dkos.co">
+                        <button className="button primary">contact</button>
+                    </Link>
                 </div>
             </div>
         </div>

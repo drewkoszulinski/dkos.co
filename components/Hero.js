@@ -19,7 +19,7 @@ const Hero = () => {
                 </svg>
             </div>
             <div className="hero-inner">
-                <h1 className="hero-heading">Ahoy! I'm a Colorado-based, UX Designer & developer. I design & build exceptionally airtight user experiences.</h1>
+                <h1 className="hero-heading">Ahoy! I&apos;m a Colorado-based, UX Designer & developer. I design & build exceptionally airtight user experiences.</h1>
             </div>
         </div>
     )

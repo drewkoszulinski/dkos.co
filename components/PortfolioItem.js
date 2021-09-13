@@ -25,7 +25,9 @@ const PortfolioItem = (props) => {
                     src={props.image}
                     width={props.imgWidth}
                     height={props.imgHeight}
-                    onClick={() => setShowModal(true)}>
+                    onClick={() => setShowModal(true)}
+                    quality="100"
+                    eager>
                 </Image>
                 <Modal
                     className="modal-component"
@@ -36,7 +38,9 @@ const PortfolioItem = (props) => {
                         src={props.image}
                         width={props.imgWidth}
                         height={props.imgHeight}
-                        layout='responsive'>
+                        layout="responsive"
+                        quality="100"
+                        objectFit="contain">
                     </Image>
                 </Modal>
             </div>

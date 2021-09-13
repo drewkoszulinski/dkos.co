@@ -7,6 +7,10 @@
     @apply p-4;
     animation: modal-open .4s cubic-bezier(.5, 0, 0, 1) forwards;
 
+    &.on-close {
+        animation: modal-close .2s cubic-bezier(.5, 0, 0, 1) forwards;
+    }
+
     .modal-close-btn {
         @apply block;
         @apply ml-auto;
@@ -22,6 +26,8 @@
     .modal-content {
         @apply max-w-7xl;
         @apply mx-auto;
+        @apply opacity-0;
+        animation: modal-content-open .7s cubic-bezier(.5, 0, 0, 1) forwards;
     }
 }
 
@@ -32,6 +38,28 @@
     }
     100% {
         @apply top-0;
+        @apply opacity-100;
+    }
+}
+
+@keyframes modal-close {
+    0% {
+        @apply top-0;
+        @apply opacity-100;
+    }
+    100% {
+        @apply top-32;
+        @apply opacity-0;
+    }
+}
+
+@keyframes modal-content-open {
+    0% {
+        @apply pt-32;
+        @apply opacity-0;
+    }
+    100% {
+        @apply pt-0;
         @apply opacity-100;
     }
 }
